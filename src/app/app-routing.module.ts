@@ -8,7 +8,8 @@ import { AuthGuard } from './core/auth.guard';
 import { CoreModule } from './core/core.module';
 
 const routes: Routes = [
-  { path: '', component: ReadmePageComponent },
+ 
+  { path: '', component: NotesListComponent },
   { path: 'login', component: UserLoginComponent },
   { path: 'notes', component: NotesListComponent,  canActivate: [AuthGuard] },
   // uploads are lazy loaded
