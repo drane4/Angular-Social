@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { UserLoginComponent } from './ui/user-login/user-login.component';
-import { ItemsListComponent } from './items/items-list/items-list.component';
+//import { ItemsListComponent } from './items/items-list/items-list.component';
 import { ReadmePageComponent } from './ui/readme-page/readme-page.component';
 import { NotesListComponent } from './notes/notes-list/notes-list.component';
 import { ProductsListComponent } from './products/products-list/products-list.component';
@@ -13,7 +13,7 @@ import { CoreModule } from './core/core.module';
 const routes: Routes = [
   { path: '', component: ReadmePageComponent },
   { path: 'login', component: UserLoginComponent },
-  { path: 'items', component: ItemsListComponent, canActivate: [AuthGuard] },
+ // { path: 'items', component: ItemsListComponent, canActivate: [AuthGuard] },
   { path: 'notes', component: NotesListComponent,  canActivate: [AuthGuard] },
   { path: 'products', component: ProductsListComponent,  canActivate: [AuthGuard] },
   // uploads are lazy loaded
